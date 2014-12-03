@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="brReproducirOnClick"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.grabadora.MainActivity" >
+
+    <Button
+        android:id="@+id/btGrabar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="btGrabarOnClick"
+        android:text="@string/btGrabar" />
+
+    <Button
+        android:id="@+id/btReproducir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btGrabar"
+        android:layout_below="@+id/btGrabar"
+        android:layout_marginTop="50dp"
+        android:enabled="false"
+        android:onClick="btReproducirOnClick"
+        android:text="@string/brReproducir" />
+
+    <Button
+        android:id="@+id/btStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btGrabar"
+        android:layout_centerHorizontal="true"
+        android:enabled="false"
+        android:onClick="btDetenerOnClick"
+        android:text="@string/btDetener" />
+
+    <ListView
+        android:id="@+id/lvGrabaciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btReproducir"
+        android:background="@android:color/background_dark" >
+
+    </ListView>
+
+</RelativeLayout>
